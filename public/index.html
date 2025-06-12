@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather notes app</title>
+  </head>
+  <body>
+    <h1>weather note</h1>
+    <div class="selector">
+      <label for="country">Country</label>
+      <select id="country"></select>
+      <label for="city">City</label>
+      <select id="city"></select>
+      <button id="getWeather">Get Weather</button>
+    </div>
+    <div id="weatherResult"></div>
+    <div id="noteSection" style="display: none">
+        <h2> add a note</h2>
+        <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+        <button id="saveNote">Save Note</button>
+    </div>
+    <div>
+        <h2>Weather notes histori</h2>
+        <ul id="noteList"></ul>
+
+        </ul>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

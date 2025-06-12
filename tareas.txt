@@ -1,0 +1,16 @@
+2. Registro de notas de clima por ciudad
+
+Objetivo:
+Permitir al usuario registrar una nota personal junto con el clima actual de una ciudad específica y consultar su historial de registros.
+
+Requerimientos:
+	•	Endpoint POST /weather/:city
+	•	Recibe la ciudad por params y note por body.
+	•	Consulta la API pública de OpenWeatherMap para obtener el clima actual.
+	•	Guarda en Firebase un registro: ciudad, clima, nota y fecha.
+	•	Devuelve el registro guardado con status 201.
+	•	Si la ciudad no existe, responde 404.
+	•	Endpoint GET /weather-history/:city
+	•	Devuelve todos los registros previos de esa ciudad guardados en Firebase.
+	•	Si no hay registros, responde 204 (No Content).
+        *       todo codigo debe ser en ingles incluyendo los comenarios
